@@ -1,7 +1,5 @@
 import os
 from sys import argv
-import validators
-# from validators.utils import ValidationFailure
 from pytube import YouTube
 from moviepy.editor import VideoFileClip
 import whisper
@@ -46,14 +44,6 @@ def main():
     print("Error: must use with args like python main.py <youtube_url>")
     exit(1)
   else:
-    # url = validators.url(argv[1])
-    # if isinstance(url, ValidationFailure):
-    #   print(f"Youtube url was not valid.")
-    #   exit(1)
-    # else:
-    # yt = YouTube(url)
-      # print(yt.title)
-      # print(yt.streams)
     youtube_url = argv[1]
 
     video_dir = './videos'
